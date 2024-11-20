@@ -1,0 +1,246 @@
+/* General Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    transform: translateY(-100px);
+    animation: slideIn 1s forwards;
+}
+
+h1.name {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+p.role {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
+section.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0;
+}
+
+section.navigation li {
+    margin: 0 15px;
+}
+
+section.navigation a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+section.navigation a:hover {
+    color: #007bff;
+}
+
+/* Section Styles */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+section.projects .project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-item .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-item .btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets (portrait mode) and small screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1.name {
+        font-size: 2.5rem;
+    }
+
+    header p.role {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    section.navigation ul {
+        flex-direction: column;
+    }
+
+    section.navigation li {
+        margin: 10px 0;
+    }
+
+    section.navigation a {
+        font-size: 1.1rem;
+    }
+
+    .project-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-item .btn {
+        padding: 8px 18px;
+    }
+}
+
+/* For Mobile (portrait mode) */
+@media (max-width: 480px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header h1.name {
+        font-size: 2rem;
+    }
+
+    header p.role {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    section.navigation ul {
+        flex-direction: column;
+    }
+
+    section.navigation li {
+        margin: 8px 0;
+    }
+
+    section.navigation a {
+        font-size: 1rem;
+    }
+
+    .project-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-item .btn {
+        padding: 6px 15px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* For Large Screens (desktops, larger tablets) */
+@media (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    header h1.name {
+        font-size: 4rem;
+    }
+
+    header p.role {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    section p {
+        font-size: 1.3rem;
+    }
+
+    .project-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .project-item .btn {
+        padding: 12px 25px;
+    }
+}
