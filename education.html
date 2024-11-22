@@ -8,7 +8,8 @@
 </head>
 <body>
   <!-- Navbar -->
-   <div class="navbar">
+  <div class="navbar">
+    <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
     <a href="index.html">Home</a>
     <a href="competencies.html">Core Competencies</a>
     <a href="education.html">Education</a>
@@ -19,14 +20,20 @@
   <!-- Main Content -->
   <div class="container">
     <h2>Education</h2>
-    <div class="education-details">
-      <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
-      <p><strong>Institution:</strong> Silver Oak University</p>
-      <p><strong>Status:</strong> Final Year, Expected Graduation 2024</p>
-    </div>
+    <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
+    <p>Silver Oak University — Final Year, Expected Graduation 2024</p>
   </div>
 
   <!-- Footer -->
   <div class="footer">© 2024 Vanshita Rathod. All rights reserved.</div>
+
+  <script>
+    // Toggle Navbar for Mobile View
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
