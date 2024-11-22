@@ -322,3 +322,95 @@ body {
     padding: 15px;
   }
 }
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 50px; /* Remove space at the top of the page */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #007bff;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00; 
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center; /* Center content */
+}
+
+.container h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.education-details p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.education-details strong {
+  color: #007bff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
